@@ -24,8 +24,11 @@ def mostrarMenu():
     this.opcao = int(input())
 
 def operacao():
+    while this.opcao < 1 or this.opcao > 10:
+
         mostrarMenu()
         if this.opcao == 1:
+
             print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
 
             print("Motoristas Disponiveis: \n" +
@@ -36,15 +39,7 @@ def operacao():
                   "\n5. Evandra Soares (★★★★) á 4km de você")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-
-
+                avalicao.avaliar()
 
         elif this.opcao == 2:
             print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
@@ -57,13 +52,7 @@ def operacao():
                   "\n5. Pedro Guilherme (★★★★★) á 4,9km de você")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
+
                 avalicao.avaliar()
 
         elif this.opcao == 3:
@@ -77,15 +66,8 @@ def operacao():
                   "\n5. Joaquim Calembrari(★) á 1,4km de você")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-                avalicao.avaliar()
 
+                avalicao.avaliar()
 
         elif this.opcao == 4:
             print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
@@ -98,38 +80,22 @@ def operacao():
                   "\n5. Jucelina Alves (★★★★★) á 4,1km de você")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
+
                 avalicao.avaliar()
 
-
-
         elif this.opcao == 5:
-                print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
+            print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
 
-                print("Motoristas Disponiveis: \n" +
-                      "\n1. Diego Batagim (★★★★) 1,9á km de você" +
-                      "\n2. Rafael Pereira (★★★) 3á km de você" +
-                      "\n3. Rafael Melo (★★★★★) á 2,3km de você" +
-                      "\n4. Vinicius Morais (★★) á 7,8km de você" +
-                      "\n5. Allan Sobral (★) á 1km de você")
-                this.opcaoMotorista = int(input())
-                if this.opcaoMotorista == 1 or 5:
-                    print("Informe para onde você deseja ir: ")
-                    this.localidade = str(input())
-                    print("Motorista a Caminho, aguarde no local!")
-                    time.sleep(3)
-                    print("Motorista no local solicitado!")
-                    time.sleep(3)
-                    print("Você Chegou ao seu Destino!!")
+            print("Motoristas Disponiveis: \n" +
+                  "\n1. Diego Batagim (★★★★) 1,9á km de você" +
+                  "\n2. Rafael Pereira (★★★) 3á km de você" +
+                  "\n3. Rafael Melo (★★★★★) á 2,3km de você" +
+                  "\n4. Vinicius Morais (★★) á 7,8km de você" +
+                  "\n5. Allan Sobral (★) á 1km de você")
+            this.opcaoMotorista = int(input())
+            if this.opcaoMotorista == 1 or 5:
 
-                    avalicao.avaliar()
-
+                avalicao.avaliar()
 
         elif this.opcao == 6:
             print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
@@ -142,15 +108,6 @@ def operacao():
                   "\n5. Cristiano Soares(★★★★★) á 4km de voçê")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-
                 avalicao.avaliar()
 
         elif this.opcao == 7:
@@ -164,16 +121,7 @@ def operacao():
                   "\n5. Diego edmundo(★★★★★) á 5km de voçê")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-
                 avalicao.avaliar()
-
 
         elif this.opcao == 8:
             print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
@@ -186,38 +134,25 @@ def operacao():
                   "\n5. Neymar Soares(★★★★★) á 4km de voçê")
             this.opcaoMotorista = int(input())
             if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-
                 avalicao.avaliar()
 
         elif this.opcao == 9:
-            print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
+            this.opcaoMotorista = -1
+            while(this.opcaoMotorista < 1 or this.opcaoMotorista > 5):
+                print("Motoristas Na Sua Localidade, escolha o melhor para você.\n")
 
-            print("Motoristas Disponiveis: \n" +
-                  "\n1. Lionel Antonio(★) 3km de distancia" +
-                  "\n2. Pablo (★★★★) á 2km de voçê" +
-                  "\n3. Gustavo Almeida(★★★★) á 4km de voçê" +
-                  "\n4. Gabriela Silva(★★★★★) á 4km de voçê" +
-                  "\n5. Evandra Soares(★★★★) á 9km de voçê")
-            this.opcaoMotorista = int(input())
-            if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-
-                avalicao.avaliar()
+                print("Motoristas Disponiveis: \n" +
+                      "\n1. Lionel Antonio(★) 3km de distancia" +
+                      "\n2. Pablo (★★★★) á 2km de voçê" +
+                      "\n3. Gustavo Almeida(★★★★) á 4km de voçê" +
+                      "\n4. Gabriela Silva(★★★★★) á 4km de voçê" +
+                      "\n5. Evandra Soares(★★★★) á 9km de voçê")
+                this.opcaoMotorista = int(input())
+                if this.opcaoMotorista > 1 and this.opcaoMotorista < 5:
+                    avalicao.avaliar()
+                else:
+                    print("Erro!, digite novamente!")
+                    this.opcaoMotorista = int(input())
 
 
         elif this.opcao == 10:
@@ -229,19 +164,9 @@ def operacao():
                   "\n3. Gustavo Almeida(★★★★★) á 2km de voçê" +
                   "\n4. Gabriela Silva(★★★) á 4km de voçê" +
                   "\n5. Evandra Soares(★★) á 6km de voçê")
-            this.opcaoMotorista = int(input())
-
-            if this.opcaoMotorista == 1 or 5:
-                print("Informe para onde você deseja ir: ")
-
-                this.localidade = str(input())
-                print("Motorista a Caminho, aguarde no local!")
-                time.sleep(3)
-                print("Motorista no local solicitado!")
-                time.sleep(3)
-                print("Você Chegou ao seu Destino!!")
-
+            while this.opcaoMotorista > 1 and this.opcaoMotorista < 5:
                 avalicao.avaliar()
+
 
 
 
