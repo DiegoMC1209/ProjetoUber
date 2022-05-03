@@ -1,4 +1,4 @@
-import this, time, avalicao
+import this, avalicao
 
 
 this.localidade = 0
