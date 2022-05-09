@@ -7,7 +7,7 @@ this.opcaoMotorista = 0
 this.opcaoAvaliacao = 0
 this.comentario = 0
 
-print("        Bem Vindo a Uber!        \n\n\n")
+print("        Bem  Vindo a Uber!        \n\n")
 
 def mostrarMenu():
     print("Onde você se encontra? " +
